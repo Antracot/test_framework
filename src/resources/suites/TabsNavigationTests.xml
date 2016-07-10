@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Tabs Navigation Tests" verbose="1" parallel="tests" thread-count="8">
+    <test name="Administrator tab navigation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testAdministratorTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Merchendaiser tab navigation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testMerchandiserTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Customer tab navigation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testCustomerTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Supervisor tab navigation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testSupervisorTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Administartion tab state test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testAdministrationTabState"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Customer tab state test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testCustomerOrderingTabState"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Supervisor tab state test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testItemManagementTabState"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Merchandiser tab state test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.TabsNavigationTest">
+                <methods>
+                    <include name="testMerchandiserOrderingTabState"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

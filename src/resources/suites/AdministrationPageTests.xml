@@ -1,0 +1,103 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Administration Page Tests" verbose="1" parallel="tests" thread-count="9">
+    <test name="Sorting test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.SortingTest">
+                <methods>
+                    <include name="testSorting"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Navigation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.NavigationTest">
+                <methods>
+                    <include name="testNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Valid user creation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.CreateUserTest">
+                <methods>
+                    <include name="testValidUserCreating"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Invalid user creation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.CreateUserTest">
+                <methods>
+                    <include name="testNotValidUserCreate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Empty user creation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.CreateUserTest">
+                <methods>
+                    <include name="testEmptyUserCreate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Existing user creation test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.CreateUserTest">
+                <methods>
+                    <include name="testExistingUserCreate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Delete user test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.DeleteUserTest">
+                <methods>
+                    <include name="testUserDeleting"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Create report test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.CreateReportTest">
+                <methods>
+                    <include name="testReportCreating"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Edit user test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.EditUserTest">
+                <methods>
+                    <include name="testUserEditing"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Search test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.SearchTest">
+                <methods>
+                    <include name="testSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Search all columns test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.administration_page.SearchTest">
+                <methods>
+                    <include name="testAllColumns"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

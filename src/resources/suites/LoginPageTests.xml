@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Login Page Tests" verbose="1" parallel="tests" thread-count="4">
+    <test name="Empty login test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.home_page.LoginTest">
+                <methods>
+                    <include name="testEmptyLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Invalid login test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.home_page.LoginTest">
+                <methods>
+                    <include name="testInvalidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Valid login test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.home_page.LoginTest">
+                <methods>
+                    <include name="testValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Logout test">
+        <classes>
+            <class name="com.softserveinc.edu.ita.tests.home_page.LoginTest">
+                <methods>
+                    <include name="testLogOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
